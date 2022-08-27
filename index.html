@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<script>
+	var i = 0; // Start point
+	var images = [];
+	var time = 3000;
+
+	// Image List
+	images[0] = 'bestseller1.jpg';
+	images[1] = 'bestseller2.jpg';
+	images[2] = 'bestseller3.jpg';
+
+	// Change Image
+	function changeImg(){
+		document.slide.src = images[i];
+
+		if(i < images.length - 1){
+			i++;
+		} else {
+			i = 0;
+		}
+
+		setTimeout("changeImg()", time);
+	}
+
+	window.onload = changeImg;
+
+</script>
+
+</head>
+<body>
+
+<!-- Navigation bar --->
+
+
+<header class="navbar">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <label class="logo">Snakers Stores</label>
+  <ul>
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#table">Size Chart</a></li>
+    <li><a href="#team">Our Team</a></li>
+    <li><a href="#Contact">Contact Us</a></li>
+  </ul>
+</header>
+
+<section class="banner">
+  <script type="text/javascript">
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky",window.scrollY>=60);
+    })
+  </script>
+</section>
+
+
+<!-- End of Navigation Bar -->
+
+<!--Home Section -->
+
+<section id="Home">
+  <div class="back">
+    <section>
+         <div class="container">
+          <div class="row">
+            <div  class="col-4" style="background-color: #4FA15F;height: 100%; " ></div>
+            <div  class="col-8" style="background-color:#4E84C2;height: 100%;"></div>       
+          </div>
+        </div>
+    </section>
+</div>
+<div class="front">
+  <section>
+       <div class="container">
+        <div class="row">
+          <div class="col-6 columtop">
+            <img name="slide" src="bestseller1.jpg" id="img-slide" class="img-responsive center-block align-middle" alt="image-slide">
+          </div>
+          
+          <div class="col-6 colum">
+            <div class="card">     
+                 <div class="card-body">
+                   <div class="topic-1">
+                    <p class="sale"><b>Sneaker Store<b> Sale!</p>
+                   </div>
+                   <div class="topic-main">
+                    <p class="newsports"><b>New Sports<br>collection already<br>on sale<b></p>
+                     </div>
+                     <div class="justify-content-center">
+                     <a href="#BestSellers" class="btn btn-primary" id="start_Shipping">Start Shopping</a>
+                     </div>
+                 </div>
+            </div> 
+          </div>       
+       </div>
+   </div>
+</section>
+ </div>
+</section> 
+</section>
+
+<!--End of Home Section Section -->
+
+
+<!--Best Sellers Section -->
+
+
+<section id="BestSellers">
+  <div class="row">
+    <p class="topic">BEST SELLERS</p>
+    <div class="item col-4">
+        <img src="bestseller1.jpg">
+        <p class="itemName">BROWN GLASSES</p>
+        <p class="casual">Casual Snakers</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+    </div>
+    <div class="item col-4">
+      <img src="bestseller2.jpg">
+      <p class="itemName">BROWN GLASSES</p>
+      <p class="casual">Casual Snakers</p>
+      <div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-half-o checked"></span>
+      </div>
+    </div>
+    <div class="item col-4">
+      <img src="bestseller3.jpg">
+      <p class="itemName">BROWN GLASSES</p>
+      <p class="casual">Casual Snakers</p>
+      <div>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star-o checked" ></span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!--End of Best Sellers Section -->
+
+
+<!--Size Chart Section -->
+
+
+<section id="table">
+  <p class="topic">SIZE CHART</p>
+  <table class="topics">
+    <tr class="table-tr">
+      <th>cm</th>
+      <th>23.5</th>
+      <th>24.4</th>
+      <th>25.4</th>
+      <th>25</th>
+      <th>27</th>
+      <th>27.9</th>
+      <th>28.6</th>
+      <th>29.4</th>
+    </tr>
+    <tr class="table-tr">
+      <td>EU</td>
+      <td>39</td>
+      <td>40</td>
+      <td>41</td>
+      <td>42</td>
+      <td>43</td>
+      <td>44</td>
+      <td>45</td>
+      <td>46</td>
+    </tr>
+
+    <tr class="table-tr">
+      <td>UK</td>
+      <td>5.5</td>
+      <td>6.5</td>
+      <td>7.5</td>
+      <td>8.5</td>
+      <td>9.5</td>
+      <td>10.5</td>
+      <td>11.5</td>
+      <td>12.5</td>
+    </tr>
+    <tr class="table-tr">
+      <td>US</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+    </tr>
+  </table>
+</section>
+
+
+<!--End of Size Chart Section -->
+
+
+<!--Our Team Section -->
+
+
+<section id="team">
+  <div class="row">
+    <p class="topic">STILL IN DOUBT? COME AND OUR TEAM WILL HELP YOU</p>
+    <div class="member col-3">
+      <img src="user1.JPG" alt="User 1">
+      <p class="name">Amanda Ferdanz</p>
+      <p class="destination">Sales Manager</p>
+    </div>
+    <div class="member col-3">
+      <img src="user2.JPG" alt="User 1">
+      <p class="name">Amanda Ferdanz</p>
+      <p class="destination">Sales Manager</p>
+    </div>
+    <div class="member col-3">
+      <img src="user3.JPG" alt="User 1">
+      <p class="name">Amanda Ferdanz</p>
+      <p class="destination">Sales Manager</p>
+    </div>
+    <div class="member col-3">
+      <img src="user4.JPG" alt="User 1">
+      <p class="name">Amanda Ferdanz</p>
+      <p class="destination">Sales Manager</p>
+    </div>
+  </div>
+</section>
+
+
+<!--End of Our Team Section -->
+
+
+
+<!--Conatact Us Form Section -->
+
+<section id="Contact">
+  <div class ="row">
+    <diV class="form col-6">
+      <p class="touch">GET IN TOUCH WITH US AND WE CAN HELP YOU</p>
+      <p class="question">Come to us or ask a question right now</p>
+        <div class="formcont">
+            <form class = "loginbox" action="MAILTO:someone@gmail.com" method="post" enTTctype="multipart/form-data">
+
+                <input type="text" name = "firstnam" placeholder="Your Name*" required>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name = "lastname" placeholder="Your Last Name">
+                <br><br>
+
+                <input type="email" name = "email" placeholder="Email*" required>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name = "phone" placeholder="Phone">
+                <br><br>
+
+                <textarea name = "message" placeholder="Message" style= "height:60px"></textarea>
+                <br><br>
+
+                <input type="submit" name = "sndmsg" value = "Send Message">
+            </form>
+        </div>
+
+
+
+    </div>
+    <diV class="map col-6">
+      <a href="https://www.google.com/maps/place/350+5th+Ave,+New+York,+NY+10118/@40.748244,-73.984957,17z/data=!4m5!3m4!1s0x89c259a9b30eac9f:0xaca05ca48ab5ac2c!8m2!3d40.7482436!4d-73.9851073?hl=en-GB"><img src="map.jpg" alt="map"></a>
+    </div>
+  </div>
+</section>
+
+
+<!--End Of Conatact Us Form Section -->
+
+
+
+<!-- Footer Section -->
+<section id="footer">
+  <footer class="col-12">
+    <p class="bottom">Copyright &copy; 2020 - Sneakers store - All rights reserved.</p>
+  </footer>
+</section>
+
+
+<!--End Of Footer Section -->
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+
+ *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+img{
+  repeat:none;
+  width: 100%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+body{
+  font-family: montserrat;
+}
+
+h1,h3,h6{
+  text-align: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+ .topic {
+  color: black;
+  text-align: center;
+  font-size: 5vh;
+  margin: 40px 0 40px 0;
+  font-weight: 500;
+}
+
+.newsports{
+  color: #F1F1F1;
+  line-height: 70px;
+  font-size: 45px;
+}
+.sale{
+  color: #F1F1F1;
+  font-size: 30px;
+}
+/*******-*- Navigation Bar *********/
+
+header{
+  position: fixed;
+
+  height: 80px;
+  width: 100%;
+  transition: 0.6s;
+  z-index: 100000;
+}
+header.sticky{
+  background: #365C9A;
+}
+header label.logo{
+  color: #F1F1F1;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  transition: 0.6s;
+}
+header ul{
+  float: right;
+  margin-right:20px;
+}
+header ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+header ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+
+
+header.sticky .logo,
+header.sticky ul li a{
+  color: #F1F1F1;
+}
+
+a.active,a:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+
+
+/********End of Navigation Bar   **************/
+
+
+/*******      Home Section   ********/
+.back section{               
+  min-height: 680px;
+  height: 100vh
+}
+
+.back .container{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+.back .row{
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.front section{
+  position: absolute;
+  top: 0;
+  min-height: 680px; 
+  height: 100vh;
+  width: 100%;
+}
+
+.front .container{
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+  position: absolute; 
+  top: 50%; left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.front .row{
+  height: 500px; 
+  display: block;
+}
+
+.front img{
+  object-fit:scale-down;
+  height:96%;
+  width: 96%;
+  margin-top:1%;
+  margin-bottom: 0;
+  transition:1s; 
+}
+
+.front img:hover{
+  height: 100%;
+  width: 100%;
+  margin-top: 0;
+}
+
+.front .card{
+  padding-top:3%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  background-color: white; /* white */
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn-primary {border-radius: 30px;}
+
+                 
+/********      End Of Home Section    ************/
+
+
+
+/*************Table Section  *************/
+
+
+
+
+th, td {
+  text-align: left;
+  padding: 8px;
+ 
+}
+.table-tr{
+  border-bottom: 2px solid #d6d6c2;
+}
+.topics tr{
+  line-height: 50px;
+}
+
+tr:nth-child(even) {
+  background-color: #F1F1F1;
+}
+
+.table-tr:hover {
+    background-color: #4E84C2;
+}
+
+
+/***** End of Table*****/
+
+
+
+/*****Best Seelers Section ****/
+
+#BestSellers .checked{
+  color:orange;
+}
+
+#BestSellers .item{
+  padding: 20px;
+}
+
+#BestSellers .item:hover{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transform: translateY(-8px);
+}
+.item{
+  text-align: center;
+}
+.itemName{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.casual{
+  color: rgb(94, 92, 90);
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+
+/*****End Of Best Sellers Section *****/
+
+
+
+/****** TEAM   ******/
+
+.name{
+  font-size: 20px;
+  margin-top: 20px;
+}
+.destination{
+  color: #365C9A;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+
+/**** End Of Team Section ****/
+
+/**** footer ****/
+
+#footer {
+  color: #ffffff;
+  background-color: #365C9A;
+  text-align: center;
+  height: 80px;
+  padding: 20px;
+}
+.bottom{
+  color:#F1F1F1 ;
+  font-weight: 500;
+  font-size: 13px;
+}
+/***  End Of Foteer ***/
+
+
+/****  Contacr Us  ****/
+
+#Contact {
+  margin: 20vh 2vw 0 2vw;
+}
+.formcont{
+     width: 115%;
+
+}
+.loginbox{
+    padding: 0;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+.loginbox input, textarea{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    height: 50px;
+    font-size: 16px;
+    width: 40%;
+}
+.loginbox textarea:focus,input:focus{
+    border-color: rgb(35, 173, 278);
+    box-shadow: 0 0 10px rgb(35, 173, 278) ;
+}
+textarea{
+    width: 85%;
+}
+.loginbox input[type = "submit"]{
+    width:150px;
+    border: none;
+    border-radius: 30px;
+    background: #365C9A;
+    height: 40px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -5px;
+}
+.touch{
+  font-weight: 300;
+  color: black;
+  font-size: 15px;
+  margin-bottom: 30px;
+
+}
+.question{
+  font-weight: 700;
+  color: black;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+/**** End Of Contact Us   ***/
+
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 20vh;
+  }
+
+}
+ 
+@media  only screen and (max-width:768px) {
+
+  [class*="col-"] {
+    width: 100%;
+  }
+  [class*="c-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+  }
+
+  header label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  header ul li a{
+    font-size: 1px;
+  }
+  .checkbtn{
+    display: block;
+  }
+  header{
+    background-color: #365C9A;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top:80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+
+  }
+  header ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  header ul li a{
+    font-size: 20px;
+  }
+  a:hover,a:active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked~ul{
+    left:0;
+  }
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 7px;;
+
+    
+  }
+}
